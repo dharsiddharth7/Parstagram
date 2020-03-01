@@ -59,6 +59,14 @@ class FeedViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     }
     
 
+    @IBAction func onLogoutButton(_ sender: Any) {
+        PFUser.logOut()
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController = main.instantiateViewController(identifier: "LogoutViewController")
+                   
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.window?.rootViewController = loginViewController
+    }
     /*
     // MARK: - Navigation
 
