@@ -99,6 +99,27 @@
                                             <outlet property="nameLabel" destination="nIV-i4-f2V" id="MxS-To-GeH"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddCommentCell" id="w1g-70-TbJ">
+                                        <rect key="frame" x="0.0" y="562" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="w1g-70-TbJ" id="xye-3c-MTQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ypj-4y-Y69">
+                                                    <rect key="frame" x="16" y="8" width="121" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ypj-4y-Y69" firstAttribute="top" secondItem="xye-3c-MTQ" secondAttribute="top" constant="8" id="8ae-CL-Doz"/>
+                                                <constraint firstItem="Ypj-4y-Y69" firstAttribute="leading" secondItem="xye-3c-MTQ" secondAttribute="leading" constant="16" id="Sh2-Xd-r0b"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ypj-4y-Y69" secondAttribute="bottom" constant="8" id="VLX-KI-CZQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
